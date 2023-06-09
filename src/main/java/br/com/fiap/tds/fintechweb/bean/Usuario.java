@@ -26,13 +26,12 @@ public class Usuario {
 		this.senha = senha;
 	}
 	
-	public Usuario(String cpf, String nome, Calendar dataNasc, char sexo, String nacionalidade, String telefone,
+	public Usuario(String cpf, String nome, Calendar dataNasc, String nacionalidade, String telefone,
 			String email, String senha) {
 		super();
 		this.cpf = cpf;
 		this.nome = nome;
 		this.dataNasc = dataNasc;
-		this.sexo = sexo;
 		this.nacionalidade = nacionalidade;
 		this.telefone = telefone;
 		this.email = email;

@@ -12,4 +12,14 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
+	<servlet>
+		<display-name>Usuario</display-name>
+		<servlet-name>UsuarioServlet</servlet-name>
+		<servlet-class>TestingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsuarioServlet</servlet-name>
+		<url-pattern>/usuario</url-pattern>
+	</servlet-mapping>
+
 </web-app>
