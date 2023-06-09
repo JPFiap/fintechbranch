@@ -25,9 +25,10 @@ public class OracleUsuarioDAO implements UsuarioDAO {
 		try {
 			conexao = FintechConnectionManager.getInstance().getConnection();
 
+//			String sql = "INSERT INTO T_FNT_USUARIO (nr_cpf, ds_email, cd_senha, nm_usuario, dt_nascimento, ds_sexo, ds_nacionalidade, nr_telefone"
+//					+ ") VALUES  (?, ?, ?, ?, ?, ?, ?, ?)";
 			String sql = "INSERT INTO T_FNT_USUARIO (nr_cpf, ds_email, cd_senha, nm_usuario, dt_nascimento, ds_sexo, ds_nacionalidade, nr_telefone"
 					+ ") VALUES  (?, ?, ?, ?, ?, ?, ?, ?)";
-
 			stmt = conexao.prepareStatement(sql);
 
 			stmt.setString(1, usuario.getCpf());
@@ -38,7 +39,7 @@ public class OracleUsuarioDAO implements UsuarioDAO {
 			Date dataNascimento = new Date(usuario.getDataNasc().getTimeInMillis());
 			stmt.setDate(5, dataNascimento);
 
-			stmt.setString(6, String.valueOf(usuario.getSexo()));
+//			stmt.setString(6, String.valueOf(usuario.getSexo()));
 			stmt.setString(7, usuario.getNacionalidade());
 			stmt.setString(8, usuario.getTelefone());
 
