@@ -4,54 +4,41 @@ import java.util.Calendar;
 
 public class CartaoCredito {
 
+	private String cpf;
 	private int id;
 	private String nome;
+	private String nomeBanco;
 	private Calendar dataFechamento;
 	private Calendar dataVencimento;
 	private double limite;
-	private String nomeBanco;
-	private String cpf;
-	private int idAnexo;
-	
-	
-	
 
 	public CartaoCredito() {
 		super();
 	}
 
-	public CartaoCredito(int id, String nome, Calendar dataFechamento, Calendar dataVencimento, double limite,
-			String nomeBanco, String cpf, int idAnexo) {
+	public CartaoCredito(String cpf, int id, String nome, Calendar dataFechamento, Calendar dataVencimento,
+			double limite, String nomeBanco) {
 		super();
+		this.cpf = cpf;
 		this.id = id;
 		this.nome = nome;
 		this.dataFechamento = dataFechamento;
 		this.dataVencimento = dataVencimento;
 		this.limite = limite;
 		this.nomeBanco = nomeBanco;
+	}
+	
+	public CartaoCredito(String cpf, String nome, Calendar dataFechamento, Calendar dataVencimento,
+			double limite, String nomeBanco) {
+		super();
 		this.cpf = cpf;
-		this.idAnexo = idAnexo;
+		this.nome = nome;
+		this.dataFechamento = dataFechamento;
+		this.dataVencimento = dataVencimento;
+		this.limite = limite;
+		this.nomeBanco = nomeBanco;
 	}
-	
-	
-	public void cadastrarCartao(int id, String nome, Calendar dataFechamento, Calendar dataVencimento, double limite,
-			String nomeBanco, String cpf) {
-		System.out.println("Cartão cadastrado com sucesso!");
-		}
-	
-	public void deletarCartao(CartaoCredito cartao) {
-		System.out.println("Cartão"  + cartao.getNome() + "removido com sucesso!");
-	}
-	
-	
-	public void atualizarCartao() {
-		
-	}
-	
-	public void consultarCartao() {
-		
-	}
-	
+
 
 	public int getId() {
 		return id;
@@ -93,18 +80,6 @@ public class CartaoCredito {
 		this.nomeBanco = nomeBanco;
 	}
 
-	public String getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-
-	public int getIdAnexo() {
-		return idAnexo;
-	}
-
 	public void setDataFechamento(Calendar dataFechamento) {
 		this.dataFechamento = dataFechamento;
 	}
@@ -113,8 +88,12 @@ public class CartaoCredito {
 		this.dataVencimento = dataVencimento;
 	}
 
-	public void setIdAnexo(int idAnexo) {
-		this.idAnexo = idAnexo;
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
 
 }

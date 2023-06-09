@@ -2,17 +2,28 @@ package br.com.fiap.tds.fintechweb.bean;
 
 public abstract class Movimentacao {
 
+	private int id;
+	private String cpf;
 	private String nome;
 	private double valor;
 	private String descricao;
 
-	public Movimentacao(String nome, double valor, String descricao) {
+	public Movimentacao(String cpf, int id, String nome, double valor, String descricao) {
 		super();
+		this.cpf = cpf;
+		this.id = id;
 		this.nome = nome;
 		this.valor = valor;
 		this.descricao = descricao;
 	}
-	
+
+	public Movimentacao(String cpf,int id, String nome, double valor) {
+		super();
+		this.cpf = cpf;
+		this.id = id;
+		this.nome = nome;
+		this.valor = valor;
+	}
 
 	public abstract void cadastrar();
 
@@ -21,7 +32,7 @@ public abstract class Movimentacao {
 	public abstract void deletar(int id);
 
 	public abstract Object atualizar(int id);
-	
+
 	public String getNome() {
 		return nome;
 	}
@@ -44,6 +55,22 @@ public abstract class Movimentacao {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
 
 }

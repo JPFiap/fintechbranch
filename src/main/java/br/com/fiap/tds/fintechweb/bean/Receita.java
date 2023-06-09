@@ -4,12 +4,17 @@ import java.util.Date;
 
 public class Receita extends Movimentacao {
 
-	public Receita(String nome, double valor, String descricao) {
-		super(nome, valor, descricao);
-		// TODO Auto-generated constructor stub
+	private Date dtEntrada;
+
+	public Receita(String cpf, int id, String nome, double valor, String descricao, Date dtEntrada) {
+		super(cpf, id, nome, valor, descricao);
+		this.dtEntrada = dtEntrada;
 	}
 
-	private Date dtEntrada;
+	public Receita(String cpf, int id, String nome, double valor, Date dtEntrada) {
+		super(cpf, id, nome, valor);
+		this.dtEntrada = dtEntrada;
+	}
 
 	public Date getDataEntrada() {
 		return dtEntrada;
@@ -24,7 +29,6 @@ public class Receita extends Movimentacao {
 		// TODO Auto-generated method stub
 
 	}
-
 
 	@Override
 	public void deletar(int id) {

@@ -1,23 +1,43 @@
 package br.com.fiap.tds.fintechweb.bean;
 
-import java.sql.Date;
+import java.util.Calendar;
 
 public class Despesa extends Movimentacao {
 
-	public Despesa(String nome, double valor, String descricao, int qtdParcelas, boolean fixo,
-			Date dtSaida, int parcelaAtual) {
-		super(nome, valor, descricao);
+	private int qtdParcelas;
+	private boolean fixo;
+	private Calendar dtSaida;
+	private int parcelaAtual;
+
+	public Despesa(String cpf, int id, String nome, double valor, String descricao, int qtdParcelas, boolean fixo,
+			Calendar dtSaida, int parcelaAtual) {
+		super(cpf, id, nome, valor, descricao);
 		this.qtdParcelas = qtdParcelas;
 		this.fixo = fixo;
 		this.dtSaida = dtSaida;
 		this.parcelaAtual = parcelaAtual;
 	}
 
-	private int qtdParcelas;
-	private boolean fixo;
-	private Date dtSaida;
-	private int parcelaAtual;
-	
+	public Despesa(String cpf, int id, String nome, double valor, int qtdParcelas, boolean fixo, Calendar dtSaida,
+			int parcelaAtual) {
+		super(cpf, id, nome, valor);
+		this.qtdParcelas = qtdParcelas;
+		this.fixo = fixo;
+		this.dtSaida = dtSaida;
+		this.parcelaAtual = parcelaAtual;
+	}
+
+	public Despesa(String cpf, int id, String nome, double valor, String descricao, int qtdParcelas, boolean fixo, Calendar dtSaida) {
+		super(cpf, id, nome, valor, descricao);
+		this.qtdParcelas = qtdParcelas;
+		this.fixo = fixo;
+		this.dtSaida = dtSaida;
+	}
+
+	public Despesa(String cpf, int id, String nome, double valor) {
+		super(cpf, id, nome, valor);
+	}
+
 	public int getQtdParcelas() {
 		return qtdParcelas;
 	}
@@ -34,12 +54,11 @@ public class Despesa extends Movimentacao {
 		this.fixo = fixo;
 	}
 
-
-	public Date getDtVencimento() {
+	public Calendar getDtSaida() {
 		return dtSaida;
 	}
 
-	public void setDtVencimento(Date dtSaida) {
+	public void setDtSaida(Calendar dtSaida) {
 		this.dtSaida = dtSaida;
 	}
 
@@ -50,13 +69,12 @@ public class Despesa extends Movimentacao {
 	public void setParcelaAtual(int parcelaAtual) {
 		this.parcelaAtual = parcelaAtual;
 	}
-	
+
 	@Override
 	public void cadastrar() {
 		// TODO Auto-generated method stub
 
 	}
-
 
 	@Override
 	public void deletar(int id) {
@@ -75,7 +93,7 @@ public class Despesa extends Movimentacao {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
+
 	public int calcularParcelasRestantes() {
 		if (qtdParcelas == 0) {
 			return 0;
@@ -83,6 +101,5 @@ public class Despesa extends Movimentacao {
 		int parcelasRestantes = qtdParcelas - parcelaAtual;
 		return parcelasRestantes > 0 ? parcelasRestantes : 0;
 	}
-
 
 }
