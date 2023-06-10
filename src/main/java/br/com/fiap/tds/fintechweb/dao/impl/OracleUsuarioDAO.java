@@ -47,7 +47,7 @@ public class OracleUsuarioDAO implements UsuarioDAO {
 
 		} catch (SQLException e) {
 			e.printStackTrace();
-			throw new DBException("Erro ao cadastrar o usu√°rio.");
+			throw new DBException("Erro ao cadastrar o usu·rio.");
 
 		} finally {
 			try {
@@ -75,18 +75,13 @@ public class OracleUsuarioDAO implements UsuarioDAO {
 				String email = rs.getString("DS_EMAIL");
 				String senha = rs.getString("CD_SENHA");
 				String nome = rs.getString("NM_USUARIO");
-
 				Date dataNasc = rs.getDate("DT_NASCIMENTO");
 				Calendar dataNascimento = Calendar.getInstance();
 				dataNascimento.setTimeInMillis(dataNasc.getTime());
-
-				String sexoString = rs.getString("DS_SEXO");
-				char sexo = sexoString.charAt(0);
-
 				String nacionalidade = rs.getString("DS_NACIONALIDADE");
 				String telefone = rs.getString("NR_TELEFONE");
 
-				Usuario usuario = new Usuario(cpf, nome, dataNascimento, sexo, nacionalidade, telefone, email, senha);
+				Usuario usuario = new Usuario(cpf, nome, dataNascimento, nacionalidade, telefone, email, senha);
 
 				lista.add(usuario);
 			}
@@ -126,8 +121,6 @@ public class OracleUsuarioDAO implements UsuarioDAO {
 
 			Date dataNascimento = new Date(usuario.getDataNasc().getTimeInMillis());
 			stmt.setDate(5, dataNascimento);
-
-			stmt.setString(6, String.valueOf(usuario.getSexo()));
 			stmt.setString(7, usuario.getNacionalidade());
 			stmt.setString(8, usuario.getTelefone());
 
@@ -137,7 +130,7 @@ public class OracleUsuarioDAO implements UsuarioDAO {
 
 		} catch (SQLException e) {
 			e.printStackTrace();
-			throw new DBException("Erro ao atualizar o usu√°rio.");
+			throw new DBException("Erro ao atualizar o usu·rio.");
 
 		} finally {
 			try {
@@ -193,18 +186,13 @@ public class OracleUsuarioDAO implements UsuarioDAO {
 				String email = rs.getString("DS_EMAIL");
 				String senha = rs.getString("CD_SENHA");
 				String nome = rs.getString("NM_USUARIO");
-
 				Date dataNasc = rs.getDate("DT_NASCIMENTO");
 				Calendar dataNascimento = Calendar.getInstance();
 				dataNascimento.setTimeInMillis(dataNasc.getTime());
-
-				String sexoString = rs.getString("DS_SEXO");
-				char sexo = sexoString.charAt(0);
-
 				String nacionalidade = rs.getString("DS_NACIONALIDADE");
 				String telefone = rs.getString("NR_TELEFONE");
 
-				usuario = new Usuario(cpfDb, nome, dataNascimento, sexo, nacionalidade, telefone, email, senha);
+				usuario = new Usuario(cpfDb, nome, dataNascimento, nacionalidade, telefone, email, senha);
 
 			}
 

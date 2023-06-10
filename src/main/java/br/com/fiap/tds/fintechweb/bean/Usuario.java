@@ -2,6 +2,8 @@ package br.com.fiap.tds.fintechweb.bean;
 
 import java.util.Calendar;
 
+import br.com.fiap.tds.fintechweb.util.CriptografiaUtils;
+
 public class Usuario {
 
 	private String cpf;
@@ -16,7 +18,7 @@ public class Usuario {
 	public Usuario() {
 
 	}
-	
+
 	public Usuario(String cpf, String email, String senha, String nome, Calendar dataNasc) {
 		super();
 		this.cpf = cpf;
@@ -25,22 +27,10 @@ public class Usuario {
 		this.email = email;
 		this.senha = senha;
 	}
-	
-	public Usuario(String cpf, String nome, Calendar dataNasc, char sexo, String nacionalidade, String telefone,
-			String email, String senha) {
-		super();
-		this.cpf = cpf;
-		this.nome = nome;
-		this.dataNasc = dataNasc;
-		this.sexo = sexo;
-		this.nacionalidade = nacionalidade;
-		this.telefone = telefone;
-		this.email = email;
-		this.senha = senha;
-	}
-	
-	public Usuario(String cpf, String nome, Calendar dataNasc, String nacionalidade, String telefone,
-			String email, String senha) {
+
+
+	public Usuario(String cpf, String nome, Calendar dataNasc, String nacionalidade, String telefone, String email,
+			String senha) {
 		super();
 		this.cpf = cpf;
 		this.nome = nome;
@@ -48,7 +38,7 @@ public class Usuario {
 		this.nacionalidade = nacionalidade;
 		this.telefone = telefone;
 		this.email = email;
-		this.senha = senha;
+		setSenha(senha);
 	}
 
 	public String getCpf() {
@@ -112,7 +102,12 @@ public class Usuario {
 	}
 
 	public void setSenha(String senha) {
-		this.senha = senha;
+		try {
+			this.senha = CriptografiaUtils.criptografar(senha);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 
 }

@@ -19,16 +19,27 @@ import br.com.fiap.tds.fintechweb.factory.DAOFactory;
  * Servlet implementation class UsuarioServlet
  */
 
-@WebServlet("/usuario")
+@WebServlet(urlPatterns = "/usuario")
 public class UsuarioServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	private UsuarioDAO dao;
 
-	@Override
-	public void init() throws ServletException {
-		super.init();
-		dao = DAOFactory.getUsuarioDAO();
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public UsuarioServlet() {
+        super();
+        dao = DAOFactory.getUsuarioDAO();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -49,7 +60,7 @@ public class UsuarioServlet extends HttpServlet {
 			Usuario usuario = new Usuario(cpf, nome, dataNasc, nacionalidade, telefone, email, senha);
 			dao.cadastrarUsuario(usuario);
 
-			request.setAttribute("msg", "Usuï¿½rio cadastrado com sucesso!");
+			request.setAttribute("msg", "Usuário cadastrado com sucesso!");
 
 		} catch (DBException db) {
 			db.printStackTrace();
@@ -58,7 +69,7 @@ public class UsuarioServlet extends HttpServlet {
 			e.printStackTrace();
 			request.setAttribute("erro", "Por favor, valide os dados");
 		}
-		request.getRequestDispatcher("cadastrousuario.jsp").forward(request, response);
+		request.getRequestDispatcher("/cadastro-usuario.jsp").forward(request, response);
 
 	}
 
