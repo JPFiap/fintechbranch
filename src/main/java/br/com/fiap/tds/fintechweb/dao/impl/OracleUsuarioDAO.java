@@ -80,7 +80,6 @@ public class OracleUsuarioDAO implements UsuarioDAO {
 				dataNascimento.setTimeInMillis(dataNasc.getTime());
 				String nacionalidade = rs.getString("DS_NACIONALIDADE");
 				String telefone = rs.getString("NR_TELEFONE");
-
 				Usuario usuario = new Usuario(cpf, nome, dataNascimento, nacionalidade, telefone, email, senha);
 
 				lista.add(usuario);
@@ -118,7 +117,6 @@ public class OracleUsuarioDAO implements UsuarioDAO {
 			stmt.setString(2, usuario.getEmail());
 			stmt.setString(3, usuario.getSenha());
 			stmt.setString(4, usuario.getNome());
-
 			Date dataNascimento = new Date(usuario.getDataNasc().getTimeInMillis());
 			stmt.setDate(5, dataNascimento);
 			stmt.setString(7, usuario.getNacionalidade());
