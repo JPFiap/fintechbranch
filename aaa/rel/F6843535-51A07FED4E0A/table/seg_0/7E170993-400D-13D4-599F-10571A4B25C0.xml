@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7E170993-400D-13D4-599F-10571A4B25C0" name="T_LOCALIZACAO">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>078C278F-0E1A-A00B-A14C-045BB0716684</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_localizacao" id="B7BC4CE9-6F5A-C985-A729-FEBD4C4A90ED">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>EAA8CFF1-AB28-2EA3-21D0-0307F8480C2A</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_estado" id="6E706E86-9214-CFA6-1698-B5D935F9EB66">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>E69E189D-0775-EAB8-C82C-16994377E20F</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_cidade" id="4FB3BF5F-F6EA-5F6E-BDED-42B7570D5A81">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>208A7BA1-856B-468D-5571-3D6095F56291</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_rua" id="D7FE1A43-307C-D233-7501-60154BCD8932">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>BF660C27-324A-6D28-6407-DD376E5F223D</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_complemento" id="A9B2C6CB-964C-EE53-10AF-2BA6355168EA">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>6ED95D4A-A7BD-D284-5E88-5668FB7C1CB5</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_USUARIO_id_usuario" id="6555632E-6B76-A1C5-5840-6370B9C11492">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>DB511CB7-9F93-E695-6A1C-D8CC73FCFF22</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="98CA8FBE-25C3-1BE2-7164-1F1B95718A29" referredColumn="92B6E6D0-E7CC-FC71-114F-F3DB2A94FFFA"/>
+</associations>
+</Column>
+<Column name="T_ENTIDADE_id_entidade" id="43C368EB-943E-200F-B935-A84CBCD01A97">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>A545187B-650A-6BE5-6C85-42768FDB98D9</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="331C3E3E-77C1-2DA5-F9DB-0FF3632F0FBB" referredColumn="BA0C1836-23E9-A158-D2D7-0C8D7880543F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6EEDD94-319C-5323-7513-6A7CB0DFF0EB" name="T_LOCALIZACAO_PKv1">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>9146A558-0379-128C-A295-00A1419D5C0E</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7BC4CE9-6F5A-C985-A729-FEBD4C4A90ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B67DD570-EEEB-521C-8A36-845429571867" name="T_LOCALIZACAO_PK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>9E422CEC-4D2C-0624-FBFE-4DD53A183605</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7BC4CE9-6F5A-C985-A729-FEBD4C4A90ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE402F56-F3F2-FC7F-A762-9787A9F0F706" name="T_LOCALIZACAO__IDX">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>1ABF40C0-7C20-ED29-28EF-B6952847AC87</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6555632E-6B76-A1C5-5840-6370B9C11492"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56EE4044-F9EE-01F7-AFE0-ABD13D9FCBC5" name="T_LOCALIZACAO__IDXv1">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>51310B55-CB19-B8B6-AAEC-C5E5C9CC364C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="43C368EB-943E-200F-B935-A84CBCD01A97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60B64719-7914-AD28-9AAA-E86FB669642F" name="T_LOCALIZACAO_T_USUARIO_FK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>1ABF40C0-7C20-ED29-28EF-B6952847AC87</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6555632E-6B76-A1C5-5840-6370B9C11492"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD855C1B-49A6-390F-C1D6-9A6CC50F6B77" name="T_LOCALIZACAO_T_ENTIDADE_FK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>51310B55-CB19-B8B6-AAEC-C5E5C9CC364C</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43C368EB-943E-200F-B935-A84CBCD01A97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

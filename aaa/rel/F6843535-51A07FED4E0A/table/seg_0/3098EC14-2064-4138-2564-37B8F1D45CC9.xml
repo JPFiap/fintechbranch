@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3098EC14-2064-4138-2564-37B8F1D45CC9" name="T_CLASSIFICACAO">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>E68A826C-DBD8-3131-1285-AFE117B41FD4</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_classificacao" id="130E2702-2D8F-FB56-B51F-D5818ECE3D10">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>129BDC65-0D7A-6E2F-E84C-15F4A8971948</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nv_emergencial" id="C32B8F00-ED40-CCCB-C4D8-4455763907E9">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>096446BF-21A7-394E-7282-5FCEF65823C3</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_classificacao" id="F3E9353C-74F6-63B8-6824-FFE6B965A2A7">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>5CBA91A1-AC4A-619E-C5BC-8648B31681FE</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 CHAR</dataTypeSize>
+<ownDataTypeParameters>120 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_NOTIFICACAO_id_notificacao" id="27EDC0DC-5020-62D9-BCA5-C821BC5B5DB2">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>326C2894-3C5B-0C90-0B16-E528E243F3B5</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE96621C-242C-4BFA-8C92-6A30B82304E8" referredColumn="F46BDA33-6A5B-CEBC-A6ED-0AD08FFBDA0B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB06471D-1FAB-B708-5001-A08929FEA717" name="T_CLASSIFCACAO_PK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>1D2D6E52-4482-8657-4AC6-D3ECF1591459</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="130E2702-2D8F-FB56-B51F-D5818ECE3D10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="897A7441-11B2-702B-B42D-BB52D6365EA0" name="T_CLASSIFICACAO_T_NOTIFICACAO_FK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>CEE9227B-47E4-2DD9-BB80-03CE71ADB94F</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27EDC0DC-5020-62D9-BCA5-C821BC5B5DB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

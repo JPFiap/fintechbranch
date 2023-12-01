@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6A9C3E69-B74D-6939-FBDA-CD0CB5447A9D" containerWithKeyObject="0CA68BCF-CD9F-2C9C-4BB8-5CBB7436D0DB" localFKIndex="793FB42F-5C58-4A56-AAF4-8DC9D8E8B0BE" name="T_ENTIDADE_T_LOCALIZACAO_FK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>51310B55-CB19-B8B6-AAEC-C5E5C9CC364C</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<referredTableLongName>T_LOCALIZACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7E170993-400D-13D4-599F-10571A4B25C0</referredTableID>
+<keyObject>B6EEDD94-319C-5323-7513-6A7CB0DFF0EB</keyObject>
+<referredKeyID>B6EEDD94-319C-5323-7513-6A7CB0DFF0EB</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_localizacao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

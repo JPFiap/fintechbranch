@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A10CEA05-E60B-6A43-C97F-79254C8BEAB0" name="T_ENTIDADE">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:06:33 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_entidade" id="54132843-44E5-C76B-A2CE-65D74F1BF802">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:08:13 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_entidade" id="4477859D-04B0-77D2-6E06-6A41DEA56933">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:08:31 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_entidade" id="2BF829DD-F2E2-00FE-D637-4938134096D1">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:09:25 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_convenio" id="D39C761D-FB5B-F674-D3E5-B95388946656">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:09:47 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_convenio" id="8FD178A8-C625-9EEA-33F2-F1CBBDC4CB7D">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:12:20 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_localizacao" id="0CA3D27A-3F92-7A2D-76DB-6EEF19E862F9">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:14:28 UTC</createdTime>
+<generatorID>51310B55-CB19-B8B6-AAEC-C5E5C9CC364C</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>EAA8CFF1-AB28-2EA3-21D0-0307F8480C2A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1763B92F-7B41-3E6B-98F7-6F7BB81F6559" name="T_ENTIDADE PK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:08:23 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>54132843-44E5-C76B-A2CE-65D74F1BF802</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

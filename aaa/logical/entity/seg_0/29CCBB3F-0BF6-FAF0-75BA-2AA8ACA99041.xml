@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="29CCBB3F-0BF6-FAF0-75BA-2AA8ACA99041" name="T_CONTATO_EMERGENCIAL">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:15:42 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_contato" id="E5C7C72A-6C15-2333-1607-8AB8F48FDBCE">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:15:53 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_contato" id="F54856B8-19D4-9A18-5447-8AC5B0EE31D9">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:16:36 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_contato" id="4B3704C6-680F-0717-A425-AB367C08C165">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:16:07 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_usuario" id="C08E1A24-E795-A824-A1D3-0D7454C56276">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:11:04 UTC</createdTime>
+<generatorID>38BB3772-D316-4CD4-989C-B9A3C13E1143</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="true"/>
+</engineerTo>
+<referedAttribute>7368FCC2-ED32-010E-7AE5-02778E1D5D8D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FAE9D1FE-3217-C515-23F7-2FC10A97FE7C" name="T_CONTATO_EMERGENCIAL PK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:16:00 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F6843535-EA51-DF3A-4CCA-51A07FED4E0A" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E5C7C72A-6C15-2333-1607-8AB8F48FDBCE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

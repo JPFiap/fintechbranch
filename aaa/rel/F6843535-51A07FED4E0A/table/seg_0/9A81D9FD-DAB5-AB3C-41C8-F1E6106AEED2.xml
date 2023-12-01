@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A81D9FD-DAB5-AB3C-41C8-F1E6106AEED2" name="T_CONTATO_EMERGENCIAL">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>29CCBB3F-0BF6-FAF0-75BA-2AA8ACA99041</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_contato" id="E31B6926-9651-84B6-FC03-981F2B1A9A6E">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>E5C7C72A-6C15-2333-1607-8AB8F48FDBCE</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_contato" id="8E48BB8D-A80F-94A0-F4FB-D6245C60BE44">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>F54856B8-19D4-9A18-5447-8AC5B0EE31D9</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_contato" id="B848CBAA-754F-6C2E-B633-DD7027D22A82">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>4B3704C6-680F-0717-A425-AB367C08C165</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_USUARIO_id_usuario" id="CD96C91D-AFAA-14A7-21B6-DFF6918E4D22">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>C08E1A24-E795-A824-A1D3-0D7454C56276</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2F32665-D230-D2C3-B7CB-6D39FD971CD1" referredColumn="92B6E6D0-E7CC-FC71-114F-F3DB2A94FFFA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8383CD6D-E603-536D-07F1-88030E9129F5" name="T_CONTATO_EMERGENCIAL_PK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>FAE9D1FE-3217-C515-23F7-2FC10A97FE7C</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E31B6926-9651-84B6-FC03-981F2B1A9A6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CCE2684-871E-4AED-F12E-FFDA8A542B0A" name="T_CONTATO_EMERGENCIAL__IDX">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>38BB3772-D316-4CD4-989C-B9A3C13E1143</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="CD96C91D-AFAA-14A7-21B6-DFF6918E4D22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C9B3356-17EB-5BE0-1095-77D02A42E21B" name="T_CONTATO_EMERGENCIAL_T_USUARIO_FK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>38BB3772-D316-4CD4-989C-B9A3C13E1143</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD96C91D-AFAA-14A7-21B6-DFF6918E4D22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

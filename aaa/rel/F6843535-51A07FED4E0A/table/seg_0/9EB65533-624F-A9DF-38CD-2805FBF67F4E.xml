@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9EB65533-624F-A9DF-38CD-2805FBF67F4E" name="T_NOTIFICACAO">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>D6DC3153-1797-01FF-DA9E-243080910C9B</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_notificacao" id="F46BDA33-6A5B-CEBC-A6ED-0AD08FFBDA0B">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>462F53FA-6216-1DAE-CD73-EFC57BAFFED2</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_notificacao" id="7A954BA8-BD42-3DDC-20FE-32BB3C56FE44">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>A5225E8B-A85E-CD57-491B-5E6E6FE74D64</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_envio" id="EF3B9CC6-F95B-0700-F1CC-AB4459E0CD87">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>4604DC68-11C8-0DB7-E020-6554E9E852EE</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="titulo_notificacao" id="353743B8-76CE-74A2-FB44-7BC227F1487F">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>CE4E3D8D-58C9-850F-E20A-66E7B3F1D1CC</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_USUARIO_id_usuario" id="12E91C59-1AB9-99F6-E5E2-FF769C5AAC6E">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>381E2F6C-F9F7-8045-01F8-831578DD8D2F</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DBA62225-9458-CC60-2AE1-2426350AC06A" referredColumn="92B6E6D0-E7CC-FC71-114F-F3DB2A94FFFA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C8FD9C14-8B26-770D-99B8-1410345A2627" name="T_NOTIFICACAO_PK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>F49E71CA-8FE4-476C-F034-D3F7F95E84DA</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F46BDA33-6A5B-CEBC-A6ED-0AD08FFBDA0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75D23ACD-AAEF-B8C2-4523-E995739E728A" name="T_NOTIFICACAO_T_USUARIO_FK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>1900449B-5C00-FB80-8D25-4935AA3C2269</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12E91C59-1AB9-99F6-E5E2-FF769C5AAC6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9887221-D522-C339-8FAD-67518BE14736" name="T_USUARIO">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>C4B0A0AC-A7CC-5709-B1AF-3807FDDA4317</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario" id="92B6E6D0-E7CC-FC71-114F-F3DB2A94FFFA">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>7368FCC2-ED32-010E-7AE5-02778E1D5D8D</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_senha" id="F7DE3A13-C4D4-B1AE-2FB3-AFEEF017A083">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>E1298678-D78B-1C96-10FF-4A0F1484FE42</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_nome" id="6B8105FF-A505-BCE2-3D29-5F293790FADF">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>E2949A36-9A40-384B-C272-92AF268030F0</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_nascimento" id="5E76C3A5-F3FD-02C1-2E34-CD54954D6F78">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>586223EE-EC3E-C020-3508-227A9437384D</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_cpf" id="F64AFC99-F7E7-5EAD-396E-939C50E579A0">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>BB1AF5B1-E8E2-31A9-B0EF-E94D866BCAC2</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_telefone" id="F93C6B11-A81B-608E-7C59-6F7A5BA326D1">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>17BD4814-953E-06DC-83AE-7327327117F1</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_sexo" id="958AC8CE-B6C9-FDAC-762A-E7C8556A1B8C">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>BC4DB4A4-A2E0-420B-0E56-CF0451360530</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_LOCALIZACAO_id_localizacao" id="A001B490-64A2-49A0-98C4-9BCAEC65CC17">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>190FFCDE-599C-B03B-7DC7-40AB17ADA784</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="302100C1-6485-CDAD-3753-F83F6ACFE722" referredColumn="B7BC4CE9-6F5A-C985-A729-FEBD4C4A90ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F6B78E1-426E-2EE5-9560-7D2953F09A2A" name="T_USUARIO_PKv1">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>B9320DC2-63E3-8E06-A1D8-76EC6FE1BA9A</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92B6E6D0-E7CC-FC71-114F-F3DB2A94FFFA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6AB2D74-3AA8-AF54-CB5C-4A030AE6ABA2" name="T_USUARIO_PK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 21:30:44 UTC</createdTime>
+<generatorID>02B937F7-93FE-4D97-9636-022738EA74AC</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92B6E6D0-E7CC-FC71-114F-F3DB2A94FFFA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC204D7E-F366-D6C2-BF0A-833E91B76116" name="T_USUARIO__IDX">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<ownerDesignName>aaa</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>1ABF40C0-7C20-ED29-28EF-B6952847AC87</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A001B490-64A2-49A0-98C4-9BCAEC65CC17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E63D170E-29DA-F11E-FDE7-D3B112F8EB5C" name="T_USUARIO_T_LOCALIZACAO_FK">
+<createdBy>joao_</createdBy>
+<createdTime>2023-08-28 22:21:26 UTC</createdTime>
+<generatorID>1ABF40C0-7C20-ED29-28EF-B6952847AC87</generatorID>
+<ownerDesignName>aaa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A001B490-64A2-49A0-98C4-9BCAEC65CC17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
